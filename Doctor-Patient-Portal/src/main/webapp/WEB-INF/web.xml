@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>myuserServlet</servlet-name>
+  	<display-name>myuserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hms.user.servlet.myuserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MyNewServlet</servlet-name>
+  	<display-name>MyNewServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hms.user.servlet.MyNewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>myuserServlet</servlet-name>
+  	<url-pattern>/myuserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MyNewServlet</servlet-name>
+  	<url-pattern>/MyNewServletRegisterUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>CancelAppointmentServlet</servlet-name>
+  	<servlet-class>com.hms.user.servlet.CancelAppointmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CancelAppointmentServlet</servlet-name>
+  	<url-pattern>/cancelAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>AdminUpdateAppointmentServlet</servlet-name>
+  	<servlet-class>com.hms.admin.servlet.AdminUpdateAppointmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminUpdateAppointmentServlet</servlet-name>
+  	<url-pattern>/adminUpdateAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>AddReviewServlet</servlet-name>
+  	<servlet-class>com.hms.user.servlet.AddReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddReviewServlet</servlet-name>
+  	<url-pattern>/addReview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>RescheduleAppointmentServlet</servlet-name>
+  	<servlet-class>com.hms.user.servlet.RescheduleAppointmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RescheduleAppointmentServlet</servlet-name>
+  	<url-pattern>/rescheduleAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>PatientReportServlet</servlet-name>
+  	<servlet-class>com.hms.user.servlet.PatientReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PatientReportServlet</servlet-name>
+  	<url-pattern>/downloadReport</url-pattern>
+  </servlet-mapping>
+</web-app>
